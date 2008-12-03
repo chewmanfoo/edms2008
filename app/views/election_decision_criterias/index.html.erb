@@ -1,0 +1,30 @@
+<h1>Listing election_decision_criterias</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Creator</th>
+    <th>Custom percent</th>
+    <th>Majority</th>
+    <th>Plurality</th>
+    <th>Super majority</th>
+  </tr>
+
+<% for election_decision_criteria in @election_decision_criterias %>
+  <tr>
+    <td><%=h election_decision_criteria.name %></td>
+    <td><%=h election_decision_criteria.creator_id %></td>
+    <td><%=h election_decision_criteria.custom_percent %></td>
+    <td><%=h election_decision_criteria.majority %></td>
+    <td><%=h election_decision_criteria.plurality %></td>
+    <td><%=h election_decision_criteria.super_majority %></td>
+    <td><%= link_to 'Show', election_decision_criteria %></td>
+    <td><%= link_to 'Edit', edit_election_decision_criteria_path(election_decision_criteria) %></td>
+    <td><%= link_to 'Destroy', election_decision_criteria, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New election_decision_criteria', new_election_decision_criteria_path %>

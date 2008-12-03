@@ -1,0 +1,30 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<h1>Listing candidates</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Body</th>
+    <th>Photo</th>
+    <th>Position</th>
+  </tr>
+
+<% for candidate in @candidates %>
+  <tr>
+    <td><%=h candidate.name %></td>
+    <td><%=h candidate.body %></td>
+    <td><img src="<%=h candidate.photo_url %>" alt="<%=h candidate.name %>" height="100px"/></td>
+    <td><%=h candidate.position %></td>
+    <td><%= link_to 'Show', candidate %></td>
+    <td><%= link_to 'Edit', edit_candidate_path(candidate) %></td>
+    <td><%= link_to 'Destroy', candidate, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New candidate', new_candidate_path %>

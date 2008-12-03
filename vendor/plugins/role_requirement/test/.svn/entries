@@ -1,0 +1,79 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/vendor/plugins/role_requirement/test
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+test_helper.rb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+52e923c116b0f82aad4bae8651d9fa25
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+functional
+dir
+
+controller_stub.rb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+6c731a05c7e6a69d00f0bb1bad89a5f2
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+authenticated_system.rb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+e1a66449def25bc96837d17504ae0c7b
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+user_stub.rb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+a0e6f3656d5f56b9eefea97a43241c9a
+2008-11-12T19:32:27.615048Z
+235
+michael
+

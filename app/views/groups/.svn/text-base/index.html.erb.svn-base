@@ -1,0 +1,56 @@
+<% content_for :nav do %>
+  <%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<h1>Listing Groups</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Creator</th>
+    <th>Group Code</th>
+    <th>Group Role</th>
+    <th>Note</th>
+  </tr>
+
+<% for group in @groups %>
+  <tr>
+    <td><%=h group.name %></td>
+    <td><%=h group.creator_id %></td>
+    <td><%=h group.group_code %></td>
+    <td><%=h group.role.name.pluralize %></td>
+    <td><%=h group.note %></td>
+    <td><%= link_to 'Show', group %></td>
+    <td><%= link_to 'Edit', edit_group_path(group) %></td>
+    <td><%= link_to 'Destroy', group, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<h1>Listing Users</h1>
+
+<table>
+  <tr>
+    <th>Login</th>
+    <th>Email</th>
+  </tr>
+
+<% for user in @users %>
+  <tr>
+    <td><%=h user.login %></td>
+    <td><%=h user.email %></td>
+    <td><%= link_to 'Show', group %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New group', new_group_path %>
+<%= link_to 'New user', new_user_path %>
+
+

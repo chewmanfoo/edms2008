@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @inspection.name %>
+</p>
+
+<p>
+  <b>Private:</b>
+  <%=h @inspection.private %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%=h @inspection.creator_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_inspection_path(@inspection) %> |
+<%= link_to 'Back', inspections_path %>

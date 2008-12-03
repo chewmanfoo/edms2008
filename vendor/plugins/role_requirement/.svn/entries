@@ -1,0 +1,82 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/vendor/plugins/role_requirement
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+test
+dir
+
+init.rb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+16a26f1a46aad1861fc4ab739cc0f028
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+ChangeLog
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+c9b5b53265f6e7c60604084a4e2efd1d
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+generators
+dir
+
+MIT-LICENSE
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+c11f961540aa250cef3184bba89206a4
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+README.textile
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+7ec6e425d824d05c143ec7c50c40a767
+2008-11-12T19:32:27.615048Z
+235
+michael
+

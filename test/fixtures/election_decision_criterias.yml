@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  creator_id: 1
+  custom_percent: 1.5
+  majority: false
+  plurality: false
+  super_majority: false
+
+two:
+  name: MyString
+  creator_id: 1
+  custom_percent: 1.5
+  majority: false
+  plurality: false
+  super_majority: false

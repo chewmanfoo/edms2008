@@ -1,0 +1,28 @@
+<!-- home/index.html.erb -->
+<h1>Welcome</h1>
+
+<% if logged_in? %>
+  <div class="announcement">
+    <h3>Welcome to EDMS Group 1.</h3>
+    <p>We are pleased you chose to visit our web site.  We hope you enjoy your stay.</p>
+  </div>
+  <div class="election_notice">
+    <h3>A New Election has been created.</h3>
+    <p>You may vote in the election by clicking on the link to the left in the Navigation pane.</p>
+  </div>
+  <p>Your roles are: 
+    <ul>
+    <% if current_user.has_role? 'voter' %>
+    <%= '<li>Voter</li>' %>
+    <% end %>
+    <% if current_user.has_role? 'executive' %>
+    <%= '<li>Executive</li>' %>
+    <% end %>
+  </p>
+<% else %>
+  <p><strong>You are currently not logged in.</strong></p>
+  <p>
+    <%= link_to 'Login', login_path %> or
+    <%= link_to 'Sign Up', signup_path %>
+  </p>
+<% end %>

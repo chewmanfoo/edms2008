@@ -1,0 +1,118 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/app/views
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-25T01:04:48.137030Z
+573
+roth
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+prefs
+dir
+
+groups
+dir
+
+voters
+dir
+
+logagents
+dir
+
+election_decision_criterias
+dir
+
+executives
+dir
+
+reporters
+dir
+
+elections
+dir
+
+backups
+dir
+
+common
+dir
+
+home
+dir
+
+audits
+dir
+
+auditors
+dir
+
+reports
+dir
+
+inspections
+dir
+
+candidates
+dir
+
+ballots
+dir
+
+layouts
+dir
+
+votes
+dir
+
+topics
+dir
+
+users
+dir
+
+sessions
+dir
+
+user_mailer
+dir
+
+posts
+dir
+
+log_entries
+dir
+
+sysadmins
+dir
+
+issues
+dir
+
+announcements
+dir
+
+addresses
+dir
+
+announcement_types
+dir
+

@@ -1,0 +1,32 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<p>
+  <b>Name:</b>
+  <%=h @election.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @election.description %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%=h @election.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%=h @election.end %>
+</p>
+
+<p>
+  <b>Time zone:</b>
+  <%=h @election.time_zone %>
+</p>
+
+
+<%= link_to 'Edit', edit_election_path(@election) %> |
+<%= link_to 'Back', elections_path %>

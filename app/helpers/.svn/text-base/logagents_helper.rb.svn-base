@@ -1,0 +1,2 @@
+module LogagentsHelper
+end

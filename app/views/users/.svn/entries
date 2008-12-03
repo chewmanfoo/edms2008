@@ -1,0 +1,52 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/app/views/users
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-17T20:13:19.199641Z
+475
+michael
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+change_password.html.erb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+51d32ff6f4c556104ef31e52033ee5ce
+2008-11-08T17:07:29.155454Z
+165
+michael
+
+new.html.erb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+35c92a7f60c97f40ac5a977cfbc66fa7
+2008-11-17T20:13:19.199641Z
+475
+michael
+

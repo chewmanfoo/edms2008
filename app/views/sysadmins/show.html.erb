@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @sysadmin.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @sysadmin.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_sysadmin_path(@sysadmin) %> |
+<%= link_to 'Back', sysadmins_path %>

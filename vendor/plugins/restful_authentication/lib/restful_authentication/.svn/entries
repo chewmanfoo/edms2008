@@ -1,0 +1,40 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/vendor/plugins/restful_authentication/lib/restful_authentication
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-04T21:40:05.362113Z
+97
+michael
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+rails_commands.rb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+f06c408a3734cdb4c5bd5d18a4cb498f
+2008-11-04T21:40:05.362113Z
+97
+michael
+

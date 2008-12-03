@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  voter_id: 1
+  moderator_id: 1
+  created_by_moderator: false
+  body: MyText
+  num_comments: 1
+
+two:
+  name: MyString
+  voter_id: 1
+  moderator_id: 1
+  created_by_moderator: false
+  body: MyText
+  num_comments: 1

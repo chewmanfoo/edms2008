@@ -1,0 +1,52 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/test
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-16T22:56:05.612840Z
+446
+roth
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+d5336526b2fc9cb1eb1808945151f7e5
+2008-11-12T14:45:16.866479Z
+234
+michael
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

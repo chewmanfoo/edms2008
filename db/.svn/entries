@@ -1,0 +1,69 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/db
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-17T14:03:23.084554Z
+474
+michael
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+development
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-11-08T17:07:29.155454Z
+165
+michael
+has-props
+
+schema.rb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+00b8c2568cf6917fff6f719000740a85
+2008-11-17T14:03:23.084554Z
+474
+michael
+
+production
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-11-08T17:07:29.155454Z
+165
+michael
+has-props
+
+migrate
+dir
+

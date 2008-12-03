@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+ <head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>
+   edms.ws - EDMS pre-release 
+  </title>
+  <%= stylesheet_link_tag 'reset-fonts-grids' %> 
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'base' %>
+  <%= stylesheet_link_tag 'content' %>
+ </head>
+<body>
+<div id="doc" class="yui-t1">
+  <div id="hd">
+    <!-- PUT MASTHEAD CODE HERE -->
+    <%= render :partial => "/common/masthead" %>
+  </div>
+  <div id="bd">
+    <div id="yui-main">
+      <div class="yui-b">
+        <!-- PUT MAIN COLUMN CODE HERE -->
+        <p style="color: green"><%= flash[:notice] %></p>
+        <p style="color: #990000"><%= flash[:alert] %></p>
+        <%= yield %> <!-- the view goes in here -->
+      </div>
+    </div>
+    <div class="yui-b">
+      <!-- PUT SECONDARY COLUMN CODE HERE -->
+      <%= render :partial => "/common/navigation" %>
+    </div>
+  </div>
+  <div id="ft">
+    <!-- PUT FOOTER CODE HERE -->
+    <%= render :partial => "/common/footer" %>
+  </div>
+</div>
+</body>
+</html>

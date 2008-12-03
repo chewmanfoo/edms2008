@@ -1,0 +1,28 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<h1>Listing ballots</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Election</th>
+    <th>Executive</th>
+  </tr>
+
+<% for ballot in @ballots %>
+  <tr>
+    <td><%=h ballot.name %></td>
+    <td><%=h ballot.election_id %></td>
+    <td><%=h ballot.executive_id %></td>
+    <td><%= link_to 'Show', ballot %></td>
+    <td><%= link_to 'Edit', edit_ballot_path(ballot) %></td>
+    <td><%= link_to 'Destroy', ballot, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New ballot', new_ballot_path %>

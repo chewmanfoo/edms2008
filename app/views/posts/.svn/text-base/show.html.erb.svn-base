@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @post.name %>
+</p>
+
+<p>
+  <b>Voter:</b>
+  <%=h @post.voter_id %>
+</p>
+
+<p>
+  <b>Moderator:</b>
+  <%=h @post.moderator_id %>
+</p>
+
+<p>
+  <b>Created by moderator:</b>
+  <%=h @post.created_by_moderator %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @post.body %>
+</p>
+
+<p>
+  <b>Num comments:</b>
+  <%=h @post.num_comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

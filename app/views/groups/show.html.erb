@@ -1,0 +1,29 @@
+<p>
+  <b>Name:</b>
+  <%=h @group.name %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%=h @group.creator_id %>
+</p>
+
+<p>
+  <b>Group Code:</b>
+  <%=h @group.group_code %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%=h @group.note %>
+</p>
+
+<h3>Users in this Group</h3>
+<ul>
+  <% @users.each do |u| %>
+  <li><%= u.login %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>

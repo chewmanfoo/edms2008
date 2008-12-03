@@ -1,0 +1,28 @@
+<h1>Listing backups</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Creator</th>
+    <th>Note</th>
+    <th>Type</th>
+    <th>Executed at</th>
+  </tr>
+
+<% for backup in @backups %>
+  <tr>
+    <td><%=h backup.name %></td>
+    <td><%=h backup.creator_id %></td>
+    <td><%=h backup.note %></td>
+    <td><%=h backup.type %></td>
+    <td><%=h backup.executed_at %></td>
+    <td><%= link_to 'Show', backup %></td>
+    <td><%= link_to 'Edit', edit_backup_path(backup) %></td>
+    <td><%= link_to 'Destroy', backup, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New backup', new_backup_path %>

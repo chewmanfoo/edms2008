@@ -1,0 +1,20 @@
+<h1>Editing auditor</h1>
+
+<% form_for(@auditor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @auditor %> |
+<%= link_to 'Back', auditors_path %>

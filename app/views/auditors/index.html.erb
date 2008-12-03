@@ -1,0 +1,22 @@
+<h1>Listing auditors</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+  </tr>
+
+<% for auditor in @auditors %>
+  <tr>
+    <td><%=h auditor.name %></td>
+    <td><%=h auditor.title %></td>
+    <td><%= link_to 'Show', auditor %></td>
+    <td><%= link_to 'Edit', edit_auditor_path(auditor) %></td>
+    <td><%= link_to 'Destroy', auditor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New auditor', new_auditor_path %>

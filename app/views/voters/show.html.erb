@@ -1,0 +1,47 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<p>
+  <b>Name:</b>
+  <%=h @voter.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @voter.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @voter.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @voter.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @voter.zip %>
+</p>
+
+<p>
+  <b>Login:</b>
+  <%=h @voter.login %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @voter.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%=h @voter.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_voter_path(@voter) %> |
+<%= link_to 'Back', voters_path %>

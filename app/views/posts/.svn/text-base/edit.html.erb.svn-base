@@ -1,0 +1,36 @@
+<h1>Editing post</h1>
+
+<% form_for(@post) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :voter_id %><br />
+    <%= f.text_field :voter_id %>
+  </p>
+  <p>
+    <%= f.label :moderator_id %><br />
+    <%= f.text_field :moderator_id %>
+  </p>
+  <p>
+    <%= f.label :created_by_moderator %><br />
+    <%= f.check_box :created_by_moderator %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.label :num_comments %><br />
+    <%= f.text_field :num_comments %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @post %> |
+<%= link_to 'Back', posts_path %>

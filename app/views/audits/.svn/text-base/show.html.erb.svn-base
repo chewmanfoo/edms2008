@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @audit.name %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%=h @audit.creator_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_audit_path(@audit) %> |
+<%= link_to 'Back', audits_path %>

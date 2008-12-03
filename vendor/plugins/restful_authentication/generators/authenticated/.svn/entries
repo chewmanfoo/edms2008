@@ -1,0 +1,55 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/vendor/plugins/restful_authentication/generators/authenticated
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-04T21:40:05.362113Z
+97
+michael
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+USAGE
+file
+
+
+
+
+2008-12-03T18:17:35.000000Z
+cdb2aed081ecd6e02941a4f298da3e72
+2008-11-04T21:40:05.362113Z
+97
+michael
+
+authenticated_generator.rb
+file
+
+
+
+
+2008-12-03T18:17:35.000000Z
+af3ae21f341cae0ce609b4ff62cd3ad2
+2008-11-04T21:40:05.362113Z
+97
+michael
+
+templates
+dir
+

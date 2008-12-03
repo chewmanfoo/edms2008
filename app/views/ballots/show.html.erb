@@ -1,0 +1,36 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<p>
+  <b>Name:</b>
+  <%=h @ballot.name %>
+</p>
+
+<p>
+  <b>Election:</b>
+  <%=h @ballot.election.name if @ballot.election.name %>
+</p>
+
+<hr />
+<% for candidate in @candidates %>
+  <div style="height: 150px">
+  <div style="float:left;clear:both;margin: 0px 10px 10px 10px;padding: 5px 5px 5px 5px;border: 1px solid;" >
+  <img src="<%=h candidate.photo_url %>" height="100px" />
+  </div>
+  <h3><%=h candidate.name %></h3>
+  <%=h candidate.body %>
+  </div>
+<% end %>
+
+<hr />
+<% for issue in @issues %>
+  <h3><%=h issue.name %></h3>
+  <p>
+  <%=h issue.body %>
+  </p>
+<% end %>
+<hr />
+
+<%= link_to 'Edit', edit_ballot_path(@ballot) %> |
+<%= link_to 'Back', ballots_path %>

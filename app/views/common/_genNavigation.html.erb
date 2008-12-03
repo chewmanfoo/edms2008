@@ -1,0 +1,30 @@
+<hr size='1px' />
+<% if logged_in? -%>
+  <div id="dynanav">
+  <div><%= link_to 'Home', home_path %></div>
+  <% if current_user.has_role? 'voter' -%>
+    <ul>
+      <li><%= link_to 'Home', dashboard_voter_path %></li>
+      <li><%= link_to 'Discussion Board', posts_path %></li>
+      <li><%= link_to 'Elections', elections_path %></li>
+    </ul>
+  <% else -%>
+    <h3>Administer an Election</h3>
+    <ul>
+      <li><%= link_to 'Show All Candidates', candidates_path %></li>
+      <li><%= link_to 'Show All Issues', issues_path %></li>
+      <li><b><%= link_to 'New Ballot', new_ballot_path %></b></li>
+      <li><%= link_to 'Show All Ballots', ballots_path %></li>
+      <li><b><%= link_to 'New Election', new_election_path %></b></li>
+      <li><%= link_to 'Show All Elections', elections_path %></li> 
+    </ul>
+    <h3>Administer Groups</h3>
+    <ul>
+      <li><%= link_to 'Show All Voters', voters_path %></li>
+      <li><b><%= link_to 'New Group', new_group_path %></b></li>
+    </ul>
+  </div>
+  <% end -%>
+<% else %>
+<p>You are NOT logged in!</p>
+<% end %>

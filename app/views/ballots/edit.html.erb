@@ -1,0 +1,28 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<h1>Editing ballot</h1>
+
+<% form_for(@ballot) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :election_id %><br />
+    <%= f.text_field :election_id %>
+  </p>
+  <p>
+    <%= f.label :executive_id %><br />
+    <%= f.text_field :executive_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @ballot %> |
+<%= link_to 'Back', ballots_path %>

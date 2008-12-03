@@ -1,0 +1,18 @@
+<p>
+  <b>User:</b>
+  <%=h @pref.user_id %>
+</p>
+
+<p>
+  <b>Preference name:</b>
+  <%=h @pref.preference_name %>
+</p>
+
+<p>
+  <b>Preference selection:</b>
+  <%=h @pref.preference_selection %>
+</p>
+
+
+<%= link_to 'Edit', edit_pref_path(@pref) %> |
+<%= link_to 'Back', prefs_path %>

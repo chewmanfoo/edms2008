@@ -1,0 +1,24 @@
+<h1>Listing prefs</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Preference name</th>
+    <th>Preference selection</th>
+  </tr>
+
+<% for pref in @prefs %>
+  <tr>
+    <td><%=h pref.user_id %></td>
+    <td><%=h pref.preference_name %></td>
+    <td><%=h pref.preference_selection %></td>
+    <td><%= link_to 'Show', pref %></td>
+    <td><%= link_to 'Edit', edit_pref_path(pref) %></td>
+    <td><%= link_to 'Destroy', pref, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New pref', new_pref_path %>

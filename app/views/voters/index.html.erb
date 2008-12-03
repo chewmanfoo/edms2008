@@ -1,0 +1,39 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<h1>Listing voters</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Login</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+ </tr>
+
+ <% for voter in @voters %>
+ <tr>
+   <td><%=h voter.name %></td>
+   <td><%=h voter.address %></td>
+   <td><%=h voter.city %></td>
+   <td><%=h voter.state %></td>
+   <td><%=h voter.zip %></td>
+   <td><%=h voter.login %></td>
+   <td><%=h voter.created_at %></td>
+   <td><%=h voter.updated_at %></td>
+   <td><%= link_to 'Show', voter %></td>
+   <td><%= link_to 'Edit', edit_voter_path(voter) %></td>
+   <td><%= link_to 'Destroy', voter, :confirm => 'Are you sure?', :method => :delete %></td>
+ </tr>
+ <% end %>
+</table>
+<br />
+<%= link_to 'New voter', new_voter_path %>
+
+
+
+

@@ -1,0 +1,29 @@
+<!-- html and erb can go here -->
+<% if logged_in? %>
+<p>
+You are logged in as <b><%=h current_user.login %></b>.
+  <div class="nav-address">
+    <%=h current_user.address.address1 if current_user.address.address1 -%><br />
+    <%=h current_user.address.address2 if current_user.address.address2 -%><br />
+    <%=h current_user.address.address3 if current_user.address.address3 -%><br />
+    <%=h current_user.address.city if current_user.address.city -%><br />
+    <%=h current_user.address.state if current_user.address.state -%>,
+    <%=h current_user.address.zip if current_user.address.zip -%><br />
+    <%=h current_user.address.country if current_user.address.country -%><br />
+  </div>
+<b><%= link_to "Logout", logout_path %> </b>
+</p>
+<br />
+<hr />
+<div>Your roles are:
+  <ul>
+  <% if current_user.has_role? 'voter' %>
+  <%= '<li>Voter</li>' %>
+  <% end %>
+  <% if current_user.has_role? 'executive' %>
+  <%= '<li>Executive</li>' %>
+  <% end %>
+  </ul>
+</div>
+<%= yield :nav %>
+<% end %>

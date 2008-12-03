@@ -1,0 +1,15 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<div class='contentSec elections'>
+	<div class='title'>Elections</div>
+	<div class='contentList'>
+		<% for election in @myElections -%>
+		<div class='election_notice'>
+			<h3><%= election.name %></h3>
+			<p><%=h election.description %></h3>
+		</div>
+		<% end %>
+	</div>
+</div>

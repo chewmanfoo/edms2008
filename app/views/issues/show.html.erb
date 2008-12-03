@@ -1,0 +1,27 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<p>
+  <b>Name:</b>
+  <%=h @issue.name %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @issue.body %>
+</p>
+
+<p>
+  <b>Query:</b>
+  <%=h @issue.query %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @issue.position %>
+</p>
+
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>

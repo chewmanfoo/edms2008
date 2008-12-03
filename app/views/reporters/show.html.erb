@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @reporter.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @reporter.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_reporter_path(@reporter) %> |
+<%= link_to 'Back', reporters_path %>

@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @log_entry.name %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%=h @log_entry.note %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%=h @log_entry.creator_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_log_entry_path(@log_entry) %> |
+<%= link_to 'Back', log_entries_path %>

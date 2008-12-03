@@ -1,0 +1,22 @@
+<h1>Listing reporters</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+  </tr>
+
+<% for reporter in @reporters %>
+  <tr>
+    <td><%=h reporter.name %></td>
+    <td><%=h reporter.title %></td>
+    <td><%= link_to 'Show', reporter %></td>
+    <td><%= link_to 'Edit', edit_reporter_path(reporter) %></td>
+    <td><%= link_to 'Destroy', reporter, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New reporter', new_reporter_path %>

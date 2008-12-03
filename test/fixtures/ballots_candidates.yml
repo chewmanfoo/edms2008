@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ballot_id: 1
+  candidate_id: 1
+
+two:
+  ballot_id: 1
+  candidate_id: 1

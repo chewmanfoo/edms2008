@@ -1,0 +1,70 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/vendor/plugins/restful_authentication
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-04T21:40:05.362113Z
+97
+michael
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+Rakefile
+file
+
+
+
+
+2008-12-03T18:17:35.000000Z
+ebfd713e05e35c55392c1999bf3bfb44
+2008-11-04T21:40:05.362113Z
+97
+michael
+
+lib
+dir
+
+install.rb
+file
+
+
+
+
+2008-12-03T18:17:35.000000Z
+3773dce53854a282602d79a631a1ff8a
+2008-11-04T21:40:05.362113Z
+97
+michael
+
+generators
+dir
+
+README
+file
+
+
+
+
+2008-12-03T18:17:35.000000Z
+55b3f6d8c8e815aaad6c508f9d3540e2
+2008-11-04T21:40:05.362113Z
+97
+michael
+

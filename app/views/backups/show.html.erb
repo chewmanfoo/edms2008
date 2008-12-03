@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @backup.name %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%=h @backup.creator_id %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%=h @backup.note %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @backup.type %>
+</p>
+
+<p>
+  <b>Executed at:</b>
+  <%=h @backup.executed_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_backup_path(@backup) %> |
+<%= link_to 'Back', backups_path %>

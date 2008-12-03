@@ -1,0 +1,43 @@
+8
+
+dir
+589
+svn://apollo.cti.depaul.edu/group1/edms/trunk/vendor/plugins/role_requirement/generators/roles
+svn://apollo.cti.depaul.edu
+
+
+
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b6e364f7-e4f8-4de1-9ea3-2c7b503fff6f
+
+roles_generator.rb
+file
+
+
+
+
+2008-12-03T18:17:34.000000Z
+a0e4154e5e08b21b66b55db30d0644a8
+2008-11-12T19:32:27.615048Z
+235
+michael
+
+templates
+dir
+

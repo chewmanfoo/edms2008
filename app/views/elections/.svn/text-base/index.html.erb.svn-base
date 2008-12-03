@@ -1,0 +1,37 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<h1>Listing elections</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Ballot</th>
+    <th>Group</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Time zone</th>
+  </tr>
+
+<% for e in @elections %>
+  <tr>
+    <td><%=h e.name if e.name %></td>
+    <td><%=h e.description if e.description %></td>
+    <td><%=h e.ballot.name if e.ballot.name %></td>
+    <td><%=h e.group.name if e.group.name %></td>
+    <td><%=h e.start if e.start %></td>
+    <td><%=h e.end if e.end %></td>
+    <td><%=h e.time_zone if e.time_zone %></td>
+    <td><%= link_to 'Show', e %></td>
+    <td><%= link_to 'Edit', edit_election_path(e) %></td>
+    <td><%= link_to 'Destroy', e, :confirm => 'Are you sure?', 
+                                  :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New election', new_election_path %>

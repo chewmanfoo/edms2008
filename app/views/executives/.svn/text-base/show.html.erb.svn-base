@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @executive.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @executive.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_executive_path(@executive) %> |
+<%= link_to 'Back', executives_path %>

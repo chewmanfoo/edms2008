@@ -1,0 +1,15 @@
+  <div class="issuey">
+  <hr />
+  <% fields_for "ballot[issue_attributes][]", issue do |i| %>
+    <p>
+      Issue: <%= i.text_field :name, :size => 50 %>  
+      <%= link_to_function "remove", "this.up('.issuey').remove()" %>
+    </p>
+    <p>
+      Description: <%= i.text_area :body, :cols => 60, :rows => 5 %>
+    </p>
+    <p>
+      Ballot Position: <%= i.text_field :position, :size => 3 %>
+    </p>
+  <% end %>
+  </div>

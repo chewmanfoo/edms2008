@@ -1,0 +1,27 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<p>
+  <b>Name:</b>
+  <%=h @candidate.name %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @candidate.body %>
+</p>
+
+<p>
+  <b>Photo url:</b>
+  <%=h @candidate.photo_url %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @candidate.position %>
+</p>
+
+
+<%= link_to 'Edit', edit_candidate_path(@candidate) %> |
+<%= link_to 'Back', candidates_path %>

@@ -1,0 +1,30 @@
+<% content_for :nav do %>
+	<%= render :partial => "common/genNavigation" %>
+<% end %>
+
+<h1>Listing issues</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Body</th>
+    <th>Query</th>
+    <th>Position</th>
+  </tr>
+
+<% for issue in @issues %>
+  <tr>
+    <td><%=h issue.name %></td>
+    <td><%=h issue.body %></td>
+    <td><%=h issue.query %></td>
+    <td><%=h issue.position %></td>
+    <td><%= link_to 'Show', issue %></td>
+    <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
+    <td><%= link_to 'Destroy', issue, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New issue', new_issue_path %>

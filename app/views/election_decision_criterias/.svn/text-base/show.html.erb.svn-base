@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @election_decision_criteria.name %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%=h @election_decision_criteria.creator_id %>
+</p>
+
+<p>
+  <b>Custom percent:</b>
+  <%=h @election_decision_criteria.custom_percent %>
+</p>
+
+<p>
+  <b>Majority:</b>
+  <%=h @election_decision_criteria.majority %>
+</p>
+
+<p>
+  <b>Plurality:</b>
+  <%=h @election_decision_criteria.plurality %>
+</p>
+
+<p>
+  <b>Super majority:</b>
+  <%=h @election_decision_criteria.super_majority %>
+</p>
+
+
+<%= link_to 'Edit', edit_election_decision_criteria_path(@election_decision_criteria) %> |
+<%= link_to 'Back', election_decision_criterias_path %>

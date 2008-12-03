@@ -1,0 +1,16 @@
+<h1>Editing logagent</h1>
+
+<% form_for(@logagent) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @logagent %> |
+<%= link_to 'Back', logagents_path %>

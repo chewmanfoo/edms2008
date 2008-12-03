@@ -1,0 +1,24 @@
+<h1>Listing inspections</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Private</th>
+    <th>Creator</th>
+  </tr>
+
+<% for inspection in @inspections %>
+  <tr>
+    <td><%=h inspection.name %></td>
+    <td><%=h inspection.private %></td>
+    <td><%=h inspection.creator_id %></td>
+    <td><%= link_to 'Show', inspection %></td>
+    <td><%= link_to 'Edit', edit_inspection_path(inspection) %></td>
+    <td><%= link_to 'Destroy', inspection, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New inspection', new_inspection_path %>
